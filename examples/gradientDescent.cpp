@@ -1,7 +1,7 @@
 #include "../src/autodiff.cpp"
 
 int main() {
-    // Define a function involving exponential and trigonometric functions using a lambda function
+    // Define a function using a lambda function
     std::function<double(const std::vector<double>&)> my_func = [](const std::vector<double>& x) -> double {
         // Example function: f(x, y) = x^2 + sin(y) +y^2 +1
         return (x[0] * x[0]) + sin(x[1]) + (x[1] * x[1]) + 1;
